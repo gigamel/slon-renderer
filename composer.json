@@ -1,0 +1,8 @@
+{
+    "name": "slon/renderer",
+    "autoload": {
+        "psr-4": {
+            "Slon\\Renderer\\": "src/"
+        }
+    }
+}
