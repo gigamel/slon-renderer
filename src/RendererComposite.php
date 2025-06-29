@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Slon\Renderer;
 
-use Slon\Renderer\Contract\RenderCompositeInterface;
+use Slon\Renderer\Contract\RendererCompositeInterface;
 use Slon\Renderer\Contract\RendererInterface;
 use Slon\Renderer\Exception\NotFoundViewException;
 use Slon\Renderer\Exception\RendererException;
@@ -15,7 +15,7 @@ use function is_dir;
 use function is_file;
 use function sprintf;
 
-final class RenderComposite implements RenderCompositeInterface
+final class RendererComposite implements RendererCompositeInterface
 {
     private readonly string $viewsDir;
     
