@@ -48,6 +48,7 @@ final class RenderComposite implements RenderCompositeInterface
      */
     public function render(string $view, array $vars = []): string
     {
+        $view = $this->viewsDir . '/' . $view;
         if (!is_file($view)) {
             throw new NotFoundViewException(sprintf(
                 'View "%s" not found',
