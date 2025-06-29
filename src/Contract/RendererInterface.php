@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Slon\Renderer\Contract;
 
-interface RendererInterface
+interface RendererInterface extends RenderableInterface, ExtensibleInterface
 {
-    public function addExtension(ExtensionInterface $extension): void;
-    
-    public function supports(string $view): bool;
-    
-    public function render(string $view, array $vars = []): string;
+    public function getExtension(): string;
 }
