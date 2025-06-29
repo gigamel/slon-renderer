@@ -6,5 +6,5 @@ namespace Slon\Renderer\Contract;
 
 interface RendererCompositeInterface extends RenderableInterface
 {
-    public function setRenderer(RendererInterface $renderer): void;
+    public function addRenderer(RendererInterface $renderer): void;
 }

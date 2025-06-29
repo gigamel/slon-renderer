@@ -37,7 +37,7 @@ final class RendererComposite implements RendererCompositeInterface
         }
     }
 
-    public function setRenderer(RendererInterface $renderer): void
+    public function addRenderer(RendererInterface $renderer): void
     {
         $this->renderers[$renderer->getExtension()] = $renderer;
     }
